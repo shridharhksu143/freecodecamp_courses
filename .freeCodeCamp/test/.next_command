@@ -110,3 +110,5 @@ man echo
 ./questionnaire.sh
 ./questionnaire.sh
 ./questionnaire.sh
+git status
+git add .

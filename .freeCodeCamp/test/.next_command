@@ -147,3 +147,5 @@ __vsc_prompt_cmd_original
 __vsc_prompt_cmd_original
 clear
 [[ 10 -ne 5 ]]
+[[ -n bad_command ]]
+bad_command

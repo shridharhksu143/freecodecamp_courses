@@ -281,3 +281,4 @@ $[[ VAR == "hello world" ]]
 [[ $VAR =~ \?$ ]]
 [[ test? =~ \?$ ]]
 ./fortune.sh
+./fortune.sh

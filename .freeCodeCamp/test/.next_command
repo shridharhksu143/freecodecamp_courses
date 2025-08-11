@@ -54,3 +54,33 @@ echo HELLO$NAME
 ./questionnaire.sh
 git status
 git add .
+git status
+git commit -m "first commit"
+git status
+git branch
+gh create repo freecodecamp
+git push origin master
+git push master
+git init
+git init
+git add origin https://github.com/shridharhksu143/freecodecamp_courses.git
+git add origin https://github.com/shrihdarhksu143/freecodecamp_courses.git
+git remote -v
+git push
+git init
+git status
+git add origin https://github.com/shrihdarhksu143/freecodecamp_courses.git
+git add origin https://github.com/shrihdarhksu143/freecodecamp_courses.git
+git status
+git remote -v
+git push origin master
+git push master
+git push main
+git branch
+git branch -b main
+git remote add origin https://github.com/freeCodeCamp/rdb-alpha.git
+git git status
+git status
+git remote -v
+git status
+git add .

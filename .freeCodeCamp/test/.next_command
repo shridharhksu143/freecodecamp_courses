@@ -131,3 +131,5 @@ help if
 ./countdown.sh 4
 ./countdown.sh 5
 help
+clear
+help [[ expression ]]

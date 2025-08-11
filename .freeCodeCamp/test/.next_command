@@ -133,3 +133,5 @@ help if
 help
 clear
 help [[ expression ]]
+clear
+help test

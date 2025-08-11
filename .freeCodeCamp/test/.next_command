@@ -154,3 +154,4 @@ ls --color=auto
 bad_command ls
 ls --color=auto
 ls --color=auto -y
+help test

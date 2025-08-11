@@ -181,3 +181,7 @@ sleep 3
 help while
 ./countdown.sh 5
 git add .
+git commit -m "Second program countdown.sh is completed"
+git push origin master
+clear
+touch bingo.sh

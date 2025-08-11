@@ -99,3 +99,7 @@ clear
 git remote -v
 git status
 git add .
+git commit -m "setupdone"
+git push origin master
+git branch
+clear

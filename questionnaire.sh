@@ -1,4 +1,5 @@
 #!/bin/bash
+echo ~~ Questionnaire ~~
 QUESTION1="What's your name?"
 QUESTION2="Where are you from?"
 echo $QUESTION1

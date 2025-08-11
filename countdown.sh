@@ -1,6 +1,6 @@
 #!/bin/bash
-echo -e "\n~~ Countdown Timer ~~\n"
 #Program that counts down to zero from a given argument
+echo -e "\n~~ Countdown Timer ~~\n"
 I=$1
 while [[ $I -ge 0 ]]
 do

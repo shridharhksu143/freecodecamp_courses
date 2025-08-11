@@ -215,3 +215,5 @@ echo $(( J bingo.sh countdown.sh questionnaire.sh 5 + 25 ))
 echo $J
 declar -p
 declare -p
+clear
+declare -p J

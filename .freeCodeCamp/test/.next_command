@@ -155,3 +155,5 @@ bad_command ls
 ls --color=auto
 ls --color=auto -y
 help test
+{[ -a countdown.sh ]}
+[[ -a countdown.sh ]]

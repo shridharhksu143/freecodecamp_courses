@@ -255,3 +255,4 @@ clear
 help
 help until
 help [[
+./fortune.sh

@@ -128,3 +128,4 @@ help if
 ./countdown.sh arg1
 ./countdown.sh ar
 ./countdown.sh ar
+./countdown.sh 4

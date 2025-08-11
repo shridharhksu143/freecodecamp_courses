@@ -224,3 +224,6 @@ __vsc_prompt_cmd_original
 ./bingo.sh
 ./bingo.sh
 help let
+clear
+./bingo.sh
+./bingo.sh

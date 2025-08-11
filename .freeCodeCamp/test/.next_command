@@ -52,3 +52,5 @@ echo HELL $NAME
 echo HELLO$NAME
 ./questionnaire.sh
 ./questionnaire.sh
+git status
+git add .

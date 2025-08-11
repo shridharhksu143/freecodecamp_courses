@@ -228,3 +228,7 @@ clear
 ./bingo.sh
 ./bingo.sh
 git add .
+git commit -m "bingo program completed"
+git push origin master
+clear
+touch fortune.sh

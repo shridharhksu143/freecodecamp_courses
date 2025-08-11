@@ -112,3 +112,8 @@ man echo
 ./questionnaire.sh
 git status
 git add .
+git commit -m "first program completed"
+git remote push origin master
+git push origin master
+clear
+touch countdown.sh

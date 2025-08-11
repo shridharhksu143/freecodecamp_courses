@@ -40,3 +40,4 @@ ls --color=auto -a
 touch questionnaire.sh
 sh questionnaire.sh
 bash questionnaire.sh
+which bash

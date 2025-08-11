@@ -51,3 +51,4 @@ ls --color=auto -l
 echo HELL $NAME
 echo HELLO$NAME
 ./questionnaire.sh
+./questionnaire.sh

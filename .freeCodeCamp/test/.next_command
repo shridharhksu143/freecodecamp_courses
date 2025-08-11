@@ -48,3 +48,5 @@ ls --color=auto -l
 ./questionnaire.sh
 ./questionnaire.sh
 ./questionnaire.sh
+echo HELL $NAME
+echo HELLO$NAME

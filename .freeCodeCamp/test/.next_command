@@ -149,3 +149,7 @@ clear
 [[ 10 -ne 5 ]]
 [[ -n bad_command ]]
 bad_command
+__vsc_prompt_cmd_original
+ls --color=auto
+bad_command ls
+ls --color=auto

@@ -160,3 +160,4 @@ help test
 [[ -a bad_files.txt ]]
 [[ -a bad_file.txt ]]
 [[ -x countdown.sh ]]
+help [[ expression ]]

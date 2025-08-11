@@ -103,3 +103,4 @@ git commit -m "setupdone"
 git push origin master
 git branch
 clear
+./questionnaire.sh

@@ -227,3 +227,4 @@ help let
 clear
 ./bingo.sh
 ./bingo.sh
+git add .

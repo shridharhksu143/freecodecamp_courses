@@ -144,3 +144,6 @@ echo $?
 echo $?
 __vsc_prompt_cmd_original
 [[ 4 -ge 5 ]]
+__vsc_prompt_cmd_original
+clear
+[[ 10 -ne 5 ]]

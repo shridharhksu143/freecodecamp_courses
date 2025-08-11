@@ -118,3 +118,4 @@ git push origin master
 clear
 touch countdown.sh
 chmod +x countdown.sh
+./countdown.sh

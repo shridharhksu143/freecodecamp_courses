@@ -283,3 +283,10 @@ $[[ VAR == "hello world" ]]
 ./fortune.sh
 ./fortune.sh
 ./fortune.sh
+clear
+git status
+git add fortune.sh
+git commit -m "fortune.sh program created"
+git push origin master
+clear
+touch five.sh

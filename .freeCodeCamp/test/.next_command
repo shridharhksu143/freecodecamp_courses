@@ -259,3 +259,4 @@ help [[
 help [[ expression ]]
 [[ -n hello==hello ]]
 [[ hello == hello ]]
+[[ hello == world ]]

@@ -244,3 +244,5 @@ echo $@
 __vsc_prompt_cmd_original
 echo $(ARR[*])
 echo ${ARR[*]}
+declare -p
+declare -p ARR

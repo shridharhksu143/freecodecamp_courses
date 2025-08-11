@@ -232,3 +232,4 @@ git commit -m "bingo program completed"
 git push origin master
 clear
 touch fortune.sh
+chmod +x fortune.sh

@@ -292,3 +292,109 @@ clear
 touch five.sh
 chmod +x five.sh
 ./five.sh
+clear
+ls --color=auto
+./countdown.sh 3
+__vsc_prompt_cmd_original
+./countdown.sh 3
+./bingo.sh
+./fortune.sh
+./countdown.sh 3
+ls --color=auto -a
+ls --color=auto -l
+cat -A five.sh
+vi five.sh
+vim five.sh
+ls --color=auto -a
+cd .freeCodeCamp/
+ls --color=auto
+cd test.sh
+cd test
+ls --color=auto
+cd ..
+ls --color=auto
+nano test.sh
+nano test.sh
+nano test.sh
+nano test.sh
+nano rest.sh
+cd test
+ls --color=auto
+nano utils.js
+cd
+ls --color=auto
+ls-files
+cd project
+ls --color=auto -a
+cd .local
+ls --color=auto
+ls --color=auto -a
+cd share
+ls --color=auto
+cd nano
+ls --color=auto
+ls --color=auto -a
+cd
+ls --color=auto -a
+cd lssh
+cd .ssh
+git status
+ls --color=auto -a
+cd known_hosts
+cd
+cd .vscode-server/
+ls --color=auto
+cd extensions
+ls --color=auto
+cd coderoad.coderoad-0.17.2/
+ls --color=auto
+cd build
+ls --color=auto
+find -name project
+find / -type d -name "project" 2> /dev/null
+cd /workspace/project
+ls --color=auto
+find / -type d -name "five.sh" 2> /dev/null
+find . -type f -name "five.sh"
+find . -type f -name "countdown.sh"
+ls --color=auto
+cd /.freeCodeCamp/reset_files/five.sh
+cd /.freeCodeCamp/reset_files/
+cd .freeCodeCamp/
+ls --color=auto
+cd reset_files/
+ls --color=auto
+nano five.sh
+nano countdown.sh
+nano five.sh
+grep './questionnaire.sh' five.sh
+cat .freeCodeCamp/test.sh
+ls --color=auto
+clear
+ls --color=auto
+ls --color=auto -a
+cd ..
+ls --color=auto -a
+nano test.sh
+cat test.sh
+ls --color=auto -a
+cd node_modules
+ls --color=auto
+cd ..
+ls --color=auto -a
+cd test
+ls --color=auto -a
+nano 100.test.js
+cd ..
+cd ..
+ls --color=auto
+git status
+git add countdown.sh
+git status
+git add five.sh
+git status
+git commit -m "final test not running"
+git push origin master
+git log
+clear
+git add .

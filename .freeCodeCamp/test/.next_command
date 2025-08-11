@@ -291,3 +291,4 @@ git push origin master
 clear
 touch five.sh
 chmod +x five.sh
+./five.sh

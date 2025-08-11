@@ -185,3 +185,4 @@ git commit -m "Second program countdown.sh is completed"
 git push origin master
 clear
 touch bingo.sh
+chmod +x bingo.sh

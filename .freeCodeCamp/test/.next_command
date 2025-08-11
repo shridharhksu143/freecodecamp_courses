@@ -35,3 +35,6 @@ __vsc_original_prompt_command=${PROMPT_COMMAND:-}
 echo hello bash
 ls --color=auto
 echo hello bash
+ls --color=auto
+ls --color=auto -a
+touch questionnaire.sh

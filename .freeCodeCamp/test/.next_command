@@ -84,3 +84,18 @@ git status
 git remote -v
 git status
 git add .
+git commit -m "Learn Bash Scripting by Building Five Programs"
+git status
+git push origin master
+git remote add origin https://github.com/shridharhksu143/freecodecamp_courses.git
+git remote -v
+git log
+git push origin master
+git remote -v
+git remote set-url origin https://github.com/shridharhksu143/freecodecamp_courses.git
+git remote -v
+git push origin master
+clear
+git remote -v
+git status
+git add .

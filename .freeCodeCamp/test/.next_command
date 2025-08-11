@@ -237,3 +237,10 @@ __vsc_prompt_cmd_original
 ./fortune.sh
 ARR=("a" "b" "c")
 echo ${ARR[1]}
+__vsc_prompt_cmd_original
+clear
+echo $*
+echo $@
+__vsc_prompt_cmd_original
+echo $(ARR[*])
+echo ${ARR[*]}

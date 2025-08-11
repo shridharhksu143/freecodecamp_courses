@@ -290,3 +290,4 @@ git commit -m "fortune.sh program created"
 git push origin master
 clear
 touch five.sh
+chmod +x five.sh

@@ -195,3 +195,5 @@ clear
 declare -p
 clear
 echo $RANDOM
+./bingo.sh
+./bingo.sh

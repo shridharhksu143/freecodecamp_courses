@@ -105,3 +105,4 @@ git branch
 clear
 ./questionnaire.sh
 echo --help
+man echo

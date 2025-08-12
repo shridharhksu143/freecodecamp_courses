@@ -117,3 +117,4 @@ git add .
 git commit -m "first commit"
 git branch
 git push origin master
+./student_info.sh

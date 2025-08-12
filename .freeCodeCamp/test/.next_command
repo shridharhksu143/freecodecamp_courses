@@ -114,3 +114,6 @@ chmod +x student_info.sh
 git status
 git add.
 git add .
+git commit -m "first commit"
+git branch
+git push origin master

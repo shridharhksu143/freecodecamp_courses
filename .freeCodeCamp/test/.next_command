@@ -121,3 +121,4 @@ git push origin master
 ./student_info.sh
 ./student_info.sh
 ./student_info.sh
+./student_info.sh

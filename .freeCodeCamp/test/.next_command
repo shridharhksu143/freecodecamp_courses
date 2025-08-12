@@ -135,3 +135,4 @@ git push origin student_database_1
 ssh -T git@github.com
 git clone https://github.com/shridharhksu143/freecodecamp_courses.git
 ./insert_data.sh
+./insert_data.sh

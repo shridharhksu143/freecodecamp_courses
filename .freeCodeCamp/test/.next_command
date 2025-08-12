@@ -33,3 +33,12 @@ __vsc_dbg_trap="$(__vsc_get_trap DEBUG)"
 trap '__vsc_preexec_all "$_"' DEBUG
 __vsc_original_prompt_command=${PROMPT_COMMAND:-}
 echo hello SQL
+git status
+git remote -v
+git remote add origin https://github.com/shridharhksu143/freecodecamp_courses.git
+git remote -v
+git init
+git git checkout -b student_database_1
+git checkout -b student_database_1
+git branch
+git add .

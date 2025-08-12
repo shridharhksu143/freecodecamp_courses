@@ -105,3 +105,4 @@ __vsc_original_prompt_command=${PROMPT_COMMAND:-}
 ls --color=auto
 psql -U postgres < students.sql
 psql --username=freecodecamp --dbname=postgres
+touch student_info.sh

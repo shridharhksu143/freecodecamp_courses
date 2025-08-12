@@ -42,3 +42,9 @@ git git checkout -b student_database_1
 git checkout -b student_database_1
 git branch
 git add .
+git commit "course started"
+git commit -m "course started"
+git push origin student_database_1
+clear
+ls --color=auto
+psql --username=freecodecamp --dbname=postgres

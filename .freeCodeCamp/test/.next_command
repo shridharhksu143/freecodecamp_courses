@@ -138,3 +138,4 @@ git clone https://github.com/shridharhksu143/freecodecamp_courses.git
 ./insert_data.sh
 ./insert_data.sh
 ./insert_data.sh
+ls --color=auto

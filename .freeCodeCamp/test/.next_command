@@ -108,3 +108,11 @@ cp students.csv students_test.csv
 git status
 clear
 git add .
+git commit -m "courses.csv script completed and students.csv started"
+git status
+git branch
+git push origin student_database_1
+git remot -v
+git remote -v
+git push origin student_database_1
+git push origin student_database_1

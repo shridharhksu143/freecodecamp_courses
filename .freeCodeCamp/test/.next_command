@@ -92,3 +92,5 @@ declare -p IFS
 ./insert_data.sh
 ./insert_data.sh
 ./insert_data.sh
+clear
+cp courses.csv courses_test.csv

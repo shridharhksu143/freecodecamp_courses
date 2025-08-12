@@ -90,3 +90,4 @@ __vsc_prompt_cmd_original
 ./insert_data.sh
 declare -p IFS
 ./insert_data.sh
+./insert_data.sh

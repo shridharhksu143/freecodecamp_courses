@@ -126,3 +126,12 @@ ping github.com
 git remote add origin https://github.com/shridharhksu143/freecodecamp_courses.git
 git status
 git add .
+git commit -m "add"
+git push orgin student_database_1
+git push origin student_database_1
+curl github.com
+git remote set-url origin git@github.com:shridharhksu143/freecodecamp_courses.git
+git push origin student_database_1
+ssh -T git@github.com
+git clone https://github.com/shridharhksu143/freecodecamp_courses.git
+./insert_data.sh

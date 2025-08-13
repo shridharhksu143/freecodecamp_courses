@@ -132,3 +132,9 @@ git push origin worldcup
 git branch
 git checkout -b worldcup
 git add .
+git commit -m "worldcup course completed"
+git push origin worldcup
+git remote add origin https://github.com/shridharhksu143/freecodecamp_courses.git
+git push origin worldcup
+git pull origin worldcup --rebase
+git add .

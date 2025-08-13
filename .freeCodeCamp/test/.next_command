@@ -204,3 +204,18 @@ git remote -v
 git status
 ls --color=auto -a
 git add .
+git commit -m "re open and committed"
+git push origin student_database_1
+__vsc_prompt_cmd_original
+git push origin student_database2
+git push origin student_database_1
+git remote add origin https://github.com/shridharhksu143/freecodecamp_courses.git
+git remote -v
+git push origin student_database_1
+git branch
+git push origin student_database_1
+git pull origin student_database_1
+ls --color=auto
+git branch
+git status
+git add .

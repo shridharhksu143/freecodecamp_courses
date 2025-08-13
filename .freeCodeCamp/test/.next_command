@@ -119,3 +119,16 @@ __vsc_prompt_cmd_original
 git status
 __vsc_prompt_cmd_original
 git add .
+git commit -m "worldcup database course completed"
+__vsc_prompt_cmd_original
+git branch
+git branch -v
+git remote branch
+bit remote branch
+git remote branch
+git push remote origin worldcup_database
+git push remote origin worldcup
+git push origin worldcup
+git branch
+git checkout -b worldcup
+git add .

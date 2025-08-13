@@ -138,3 +138,10 @@ git remote add origin https://github.com/shridharhksu143/freecodecamp_courses.gi
 git push origin worldcup
 git pull origin worldcup --rebase
 git add .
+git commit -m "worldcup completed"
+git pull origin worldcup --rebase
+git push origin worldcup
+git stash pop
+git branch -m worldcup_database
+git branch
+git add .

@@ -1,0 +1,36 @@
+ game_id | year |     round     | winner_id | opponent_id | winner_goals | opponent_goals 
+---------+------+---------------+-----------+-------------+--------------+----------------
+     193 | 2018 | Final         |       250 |         251 |            4 |              2
+     194 | 2018 | Third Place   |       252 |         253 |            2 |              0
+     195 | 2018 | Semi-Final    |       251 |         253 |            2 |              1
+     196 | 2018 | Semi-Final    |       250 |         252 |            1 |              0
+     197 | 2018 | Quarter-Final |       251 |         254 |            3 |              2
+     198 | 2018 | Quarter-Final |       253 |         255 |            2 |              0
+     199 | 2018 | Quarter-Final |       252 |         256 |            2 |              1
+     200 | 2018 | Quarter-Final |       250 |         257 |            2 |              0
+     201 | 2018 | Eighth-Final  |       253 |         258 |            2 |              1
+     202 | 2018 | Eighth-Final  |       255 |         259 |            1 |              0
+     203 | 2018 | Eighth-Final  |       252 |         260 |            3 |              2
+     204 | 2018 | Eighth-Final  |       256 |         261 |            2 |              0
+     205 | 2018 | Eighth-Final  |       251 |         262 |            2 |              1
+     206 | 2018 | Eighth-Final  |       254 |         263 |            2 |              1
+     207 | 2018 | Eighth-Final  |       257 |         264 |            2 |              1
+     208 | 2018 | Eighth-Final  |       250 |         265 |            4 |              3
+     209 | 2014 | Final         |       266 |         265 |            1 |              0
+     210 | 2014 | Third Place   |       267 |         256 |            3 |              0
+     211 | 2014 | Semi-Final    |       265 |         267 |            1 |              0
+     212 | 2014 | Semi-Final    |       266 |         256 |            7 |              1
+     213 | 2014 | Quarter-Final |       267 |         268 |            1 |              0
+     214 | 2014 | Quarter-Final |       265 |         252 |            1 |              0
+     215 | 2014 | Quarter-Final |       256 |         258 |            2 |              1
+     216 | 2014 | Quarter-Final |       266 |         250 |            1 |              0
+     217 | 2014 | Eighth-Final  |       256 |         269 |            2 |              1
+     218 | 2014 | Eighth-Final  |       258 |         257 |            2 |              0
+     219 | 2014 | Eighth-Final  |       250 |         270 |            2 |              0
+     220 | 2014 | Eighth-Final  |       266 |         271 |            2 |              1
+     221 | 2014 | Eighth-Final  |       267 |         261 |            2 |              1
+     222 | 2014 | Eighth-Final  |       268 |         272 |            2 |              1
+     223 | 2014 | Eighth-Final  |       265 |         259 |            1 |              0
+     224 | 2014 | Eighth-Final  |       252 |         273 |            2 |              1
+(32 rows)
+

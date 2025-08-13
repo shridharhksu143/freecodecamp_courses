@@ -98,3 +98,24 @@ psql --username=freecodecamp --dbname=worldcup
 clear
 ./queries.sh
 ./queries.sh
+git status
+git Number of games where the winning team scored more than two goals:
+6
+__vsc_prompt_cmd_original
+Winner of the 2018 tournament team name:
+France
+__vsc_prompt_cmd_original
+List of teams who played in the 2014 'Eighth-Final' round:
+Algeria
+Argentina
+Belgium
+Brazil
+Chile
+Colombia
+Costa Rica
+__vsc_prompt_cmd_original
+__vsc_prompt_cmd_original
+__vsc_prompt_cmd_original
+git status
+__vsc_prompt_cmd_original
+git add .

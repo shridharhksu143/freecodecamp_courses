@@ -145,3 +145,7 @@ git stash pop
 git branch -m worldcup_database
 git branch
 git add .
+git commit -m "world cup completed"
+git push origin worldcup_database
+pg_dump -cC --inserts -U freecodecamp worldcup > worldcup.sql
+git add .

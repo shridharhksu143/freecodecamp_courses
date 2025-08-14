@@ -162,3 +162,4 @@ wc -w < kitty_ipsum_2.txt >> kitty_info.txt
 echo -e "\nNumber of characters:" >> kitty_info.txt
 cat kitty_ipsum_2.txt
 cat kitty_ipsum_2.txt
+grep --color 'meow[a-z]*' kitty_ipsum_2.txt

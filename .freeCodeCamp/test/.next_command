@@ -255,3 +255,10 @@ cat kitty_ipsum_2.txt
 ./translate.sh kitty_ipsum_2.txt > doggy_ipsum_2.txt
 cat doggy_ipsum_2.txt
 diff --color kitty_ipsum_2.txt doggy_ipsum_2.txt
+git status
+cat kitt_info_1.txt
+cat kitty_info_1.txt
+cat kitty_info.txt
+clear
+git status
+git add .

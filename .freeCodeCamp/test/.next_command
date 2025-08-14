@@ -225,3 +225,5 @@ grep --color 'cat[a-z]*' kitty_ipsum_1.txt < ./translate.sh
 ./translate.sh kitty_ipsum_1.txt
 man grep
 ./translate.sh kitty_ipsum_1.txt
+man grep
+man grep

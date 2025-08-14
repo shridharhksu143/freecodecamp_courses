@@ -80,3 +80,5 @@ wc -c kitty_ipsum_1.txt
 wc -m kitty_ipsum_1.txt
 wc kitty_ipsum_1.txt
 cat kitty_ipsum_1.txt
+wc kitty_ipsum_1.txt
+wc < kitty_ipsum_1.txt

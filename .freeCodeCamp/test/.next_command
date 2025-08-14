@@ -64,3 +64,5 @@ chmod +x script.sh
 echo Shridhar
 echo Shridhar
 echo Shridhar
+echo name.txt
+./script.sh < name.txt

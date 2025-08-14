@@ -227,3 +227,4 @@ man grep
 ./translate.sh kitty_ipsum_1.txt
 man grep
 man grep
+./translate.sh kitty_ipsum_1.txt

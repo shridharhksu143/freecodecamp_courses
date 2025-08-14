@@ -245,3 +245,5 @@ cat kitty_ipsum_1.txt
 cat doggy_ipsum_1.txt
 diff kitty_ipsum_1.txt doggy_ipsum_1.txt
 man diff
+diff --color kitty_ipsum_1.txt dogy_ipsum_1.txt
+diff --color kitty_ipsum_1.txt doggy_ipsum_1.txt

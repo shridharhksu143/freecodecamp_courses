@@ -112,3 +112,4 @@ cp kitty_info.txt kitty_info_1.txt
 grep -n 'meow[a-]*' kitty_ipsum_1.txt
 grep -n 'meow[a-z]*' kitty_ipsum_1.txt
 man grep
+cat name.txt

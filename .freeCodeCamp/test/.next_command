@@ -152,3 +152,6 @@ echo -e "\n\n~~ kitty_ipsum_2.txt info ~~"
 echo -e "\n\n~~ kitty_ipsum_2.txt info ~~" >> kitty_info.txt
 echo -e "\nNumber of lines:"
 echo -e "\nNumber of lines:" >> kitty_info.txt
+cp kitty_info.txt kitty_info_1.txt
+cat kitty_ipsum_2.txt
+cat kitty_ipsum_2.txt

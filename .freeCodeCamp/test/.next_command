@@ -262,3 +262,18 @@ cat kitty_info.txt
 clear
 git status
 git add .
+git branch
+git remote -v
+git commit -m "kitty ipsum translator completed "
+git push remote origin
+git remote -v
+git add remote origin https://github.com/shridharhksu143/freecodecamp_courses.git
+git remot add origin https://github.com/shridharhksu143/freecodecamp_courses.git
+git remote add origin https://github.com/shridharhksu143/freecodecamp_courses.git
+git branch
+git remote -v
+git branch
+git branch kitty_ipsum_translator
+git checkout kitty_ipsum_translator
+git add
+git add .

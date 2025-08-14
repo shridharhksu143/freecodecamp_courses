@@ -56,3 +56,4 @@ echo $NAME
 cat Shrihdar
 cat
 cat name.txt
+cat < name.txt

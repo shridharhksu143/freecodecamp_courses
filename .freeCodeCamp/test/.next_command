@@ -109,3 +109,13 @@ __vsc_prompt_cmd_original
 ./bike-shop.sh
 ./bike-shop.sh
 ./bike-shop.sh
+git status
+git branch
+git remote -v
+git remote add origin https://github.com/shridharhksu143/freecodecamp_courses.git
+git remote -v
+git branch
+git checkout bike_rental_shop
+git checkout -b bike_rental_shop
+bit add .
+git add .

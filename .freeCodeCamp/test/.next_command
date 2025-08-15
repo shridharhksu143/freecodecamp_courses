@@ -207,3 +207,5 @@ sudo service postgresql status
 __vsc_prompt_cmd_original
 sudo service postgresql start
 psql --username=freecodecamp --dbname=bikes
+/bike-shop.sh
+./bike-shop.sh

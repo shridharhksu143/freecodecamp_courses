@@ -80,6 +80,7 @@ fi
 RETURN_MENU () {
 # get customer info
 echo -e "\nWhat's your phone number?"
+read PHONE_NUMBER
 # if not found
 # send to main menu
 }

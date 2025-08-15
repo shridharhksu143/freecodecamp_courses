@@ -103,6 +103,7 @@ else
       echo "$BIKE_ID) $SIZE\" $TYPE Bike"
     done
     # ask for bike to return
+    echo -e "\nWhich one would you like to return?"
     # if not a number
     # send to main menu
   fi

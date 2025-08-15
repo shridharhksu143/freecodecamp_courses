@@ -267,3 +267,16 @@ git push origin bike_rental_shop
 ./bike-shop.sh
 git status
 git add .
+git commit -m "Building a bike Rental Shop Completed"
+git branch
+git push origin bike_rental_shop
+ping -c 3 github.com
+git add remote origin https://github.com/shridharhksu143/freecodecamp_courses.git
+git remote add origin https://github.com/shridharhksu143/freecodecamp_courses.git
+git push origin bike_rental_shop
+git remote -v
+sudo nano /etc/resolv.conf
+curl https://github.com
+sudo nano /etc/resolv.conf
+curl https://github.com
+git push origin bike_rental_shop

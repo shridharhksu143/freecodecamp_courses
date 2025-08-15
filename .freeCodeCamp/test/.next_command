@@ -251,3 +251,11 @@ echo "$(echo ' M e ' | sed -E 's/^ *| *$//g')."
 ./bike-shop.sh
 git remote -v
 git add .
+git commit -m "79% completed"
+git status
+git branch
+git push origin bike_rental_shop
+git push origin bike_rental_shop
+git push origin bike_rental_shop
+git push origin bike_rental_shop
+git push origin bike_rental_shop

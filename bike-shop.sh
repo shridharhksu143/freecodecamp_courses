@@ -112,6 +112,7 @@ else
     $MAIN_MENU "That is not a valid bike number."
     else
       # check if input is rented
+      
       # if input not rented
       # send to main menu
     fi

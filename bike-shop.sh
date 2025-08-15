@@ -81,10 +81,12 @@ RETURN_MENU () {
 # get customer info
 echo -e "\nWhat's your phone number?"
 read PHONE_NUMBER
-CUSTOMER_ID=$($PSQL "SELECT customer_id 
-FROM customers WHERE phone='$PHONE_NUMBER';")
+CUSTOMER_ID=$($PSQL "SELECT customer_id FROM customers WHERE phone='$PHONE_NUMBER';")
 # if not found
+if [[ -z $CUSTOMER_ID ]]
+then
 # send to main menu
+fi
 }
 EXIT () {
 echo -e "\nThank you for stopping in.\n"

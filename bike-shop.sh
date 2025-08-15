@@ -114,7 +114,10 @@ else
       # check if input is rented
       RENTAL_ID=$($PSQL "SELECT rental_id FROM rentals INNER JOIN customers USING(customer_id) WHERE date_returned IS NULL AND phone='$PHONE_NUMBER' AND bike_id='$BIKE_ID_TO_RETURN';")
       # if input not rented
-      # send to main menu
+      if [[ -z $RENTAL_ID ]]
+      then
+        # send to main menu
+      fi
     fi
   fi
 fi

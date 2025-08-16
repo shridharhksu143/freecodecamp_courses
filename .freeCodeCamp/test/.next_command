@@ -64,3 +64,7 @@ git remote -v
 git add remote origin https://github.com/shridharhksu143/freecodecamp_courses.git
 git remote add origin https://github.com/shridharhksu143/freecodecamp_courses.git
 git add .
+git commit -m "Castle with nano completed"
+git push origin castle
+git checkout -b nano_castle
+git add .

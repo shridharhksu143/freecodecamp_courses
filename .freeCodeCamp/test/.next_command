@@ -36,3 +36,7 @@ echo hello nano
 touch castle.sh
 ls --color=auto
 nano castle.sh
+./castle.sh
+chmod +x castle.sh
+./castle.sh
+bash castle.sh

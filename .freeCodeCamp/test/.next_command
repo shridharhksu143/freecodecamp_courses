@@ -57,3 +57,10 @@ bash castle.sh
 nano castle.sh
 __vsc_prompt_cmd_original
 bash castle.sh
+git status
+git branch
+ls --color=auto
+git remote -v
+git add remote origin https://github.com/shridharhksu143/freecodecamp_courses.git
+git remote add origin https://github.com/shridharhksu143/freecodecamp_courses.git
+git add .

@@ -99,3 +99,10 @@ git branch
 git push origin salon
 git status
 git add .
+git commit -m "salon appointment schedular completed"
+git push origin salon
+git status
+git ls-files
+git config --global user.name "Shridhar Kottappanavar"
+git config --global user.email "shridharhk076@gmail.com"
+git status

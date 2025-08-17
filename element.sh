@@ -4,7 +4,7 @@ ARG=$1
 #check for input is number or not 
 if [[ $ARG =~ ^[0-9]+$ ]]
 then
-  PROPERTIES=$($PSQL "SELECT type,atomic_mass,melting_point_celsius,boiling_point_celsius,name,symbol FROM properties INNER JOIN elements USING(atomic_number) WHERE atomic_number=$ARG;")
+  PROPERTIES=$($PSQL "SELECT type,atomic_mass,melting_point_celsius,boiling_point_celsius,name,symbol FROM properties INNER JOIN elements USING(atomic_number) INNER JOIN types USING(type_id) WHERE atomic_number=$ARG;")
   if [[ -z $PROPERTIES ]];
   then
     echo "I could not find that element in the database."
@@ -16,7 +16,7 @@ then
   done
 elif [[ $ARG =~ ^[A-Z][a-z]?$ ]]
 then
-  PROPERTIES_1=$($PSQL "SELECT atomic_number,type,atomic_mass,melting_point_celsius,boiling_point_celsius,name,symbol FROM properties INNER JOIN elements USING(atomic_number) WHERE symbol='$ARG';")
+  PROPERTIES_1=$($PSQL "SELECT atomic_number,type,atomic_mass,melting_point_celsius,boiling_point_celsius,name,symbol FROM properties INNER JOIN elements USING(atomic_number) INNER JOIN types USING(type_id) WHERE symbol='$ARG';")
   if [[ -z $PROPERTIES_1 ]]
   then
     echo "I could not find that element in the database."
@@ -28,7 +28,7 @@ then
   done
 elif [[ $ARG =~ ^[A-Za-z]+$ ]]
 then
-  PROPERTIES_2=$($PSQL "SELECT atomic_number,type,atomic_mass,melting_point_celsius,boiling_point_celsius,name,symbol FROM properties INNER JOIN elements USING(atomic_number) WHERE name ILIKE '$ARG';")
+  PROPERTIES_2=$($PSQL "SELECT atomic_number,type,atomic_mass,melting_point_celsius,boiling_point_celsius,name,symbol FROM properties INNER JOIN elements USING(atomic_number) INNER JOIN types USING(type_id) WHERE name ILIKE '$ARG';")
   if [[ -z $PROPERTIES_2 ]]
   then
     echo "I could not find that element in the database."

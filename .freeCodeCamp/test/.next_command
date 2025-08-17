@@ -326,3 +326,8 @@ ls --color=auto
 ls --color=auto -a
 git status
 git add .
+git commit -m "bike rental shop completed: ; "
+git remote -v
+git push remote origin
+git branch
+git push origin bike_rental_shop

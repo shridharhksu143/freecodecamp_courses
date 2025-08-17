@@ -9,5 +9,10 @@ then
   do
     echo -e "\nThe element with atomic number $ARG is $NAME ($SYMBOL).It's a $TYPE,with a mass of $MASS amu.$NAME has a melting point of $MELTING celsius and a boiling point $BOILING celsius."
   done
+elif [[ $ARG =~ ^[A-Za-z]$ ]]
+then
+  echo single letter
+else
+  echo $ARG
 fi
 echo Please provide an element as an argument.

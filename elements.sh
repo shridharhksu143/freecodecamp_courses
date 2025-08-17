@@ -1,7 +1,7 @@
 #!/bin/bash
 PSQL="psql --username=freecodecamp --dbname=periodic_table -t --no-align -c"
-echo Please provide an element as an argument.
-read ARG
+ARG=$1
+#check for input is number or not 
 if [[ $ARG =~ ^[0-9]+$ ]]
 then
   PROPERTIES=$($PSQL "SELECT type,atomic_mass,melting_point_celsius,boiling_point_celsius,name,symbol FROM properties INNER JOIN elements USING(atomic_number) WHERE atomic_number=$ARG;")
@@ -10,3 +10,4 @@ then
     echo -e "\nThe element with atomic number $ARG is $NAME ($SYMBOL).It's a $TYPE,with a mass of $MASS amu.$NAME has a melting point of $MELTING celsius and a boiling point $BOILING celsius."
   done
 fi
+echo Please provide an element as an argument.

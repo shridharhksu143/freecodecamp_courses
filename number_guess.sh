@@ -15,20 +15,15 @@ USER_NAME_CHECK=$($PSQL "SELECT name FROM users WHERE name = '$USER_NAME';")
 while ! [[ $USER_NAME =~ ^[A-Za-z]+$ ]]
 do
   read USER_NAME
- 
-  if [[ $USER_NAME =~ ^[A-Za-z]+$ ]]
-  then
-    #if valid name proceed
-    exit
-  else
-    # if invalid username continue
-    echo "Please Enter a valid username"
-    continue
-  fi  
+
+  # if invalid username continue
+  echo "Please Enter a valid username"
+  continue
+  
 done
 
 # create a if loop to check user availabality 
-if ! [[ $USER_NAME == $USER_NAME_CHECK ]]
+if  [[ $USER_NAME == $USER_NAME_CHECK ]]
 then
   #if not availabe show available show welcome message
   echo "Welcome, $USER_NAME! It looks this is your first time here."
@@ -41,12 +36,11 @@ else
   #user_id
   USER_ID=$($PSQL "SELECT user_id FROM users WHERE name = '$USER_NAME';")
   #total number of games played
-  GAMES_PLAYED=$($PSQL "SELECT COUNT(*) FROM games WHERE user_id = '$USER_ID';")
+  GAMES_PLAYED=$($PSQL "SELECT COUNT(*) FROM games WHERE user_id = $USER_ID;")
   # best attempt
-  BEST_ATTEMPT=$($PSQL "SELECT attempts FROM games WHERE user_id = '$USER_ID' ORDER BY attempts ASC LIMIT 1;")
-
+  BEST_ATTEMPT=$($PSQL "SELECT MIN(attempts) FROM games WHERE user_id = $USER_ID ;")
   #show welcome message
-  echo "Welcome back, you have played $GAMES_PLAYED games, and your best game took $BEST_GAME guesses.
+  echo "Welcome back, you have played $GAMES_PLAYED games, and your best game took $BEST_ATTEMPT guesses."
 fi
 
 

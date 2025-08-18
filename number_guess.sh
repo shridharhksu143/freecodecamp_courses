@@ -44,23 +44,31 @@ fi
 
 GUESS_NUMBER=0
 TRIES=0
+
 #prompt for number guessing
 echo "Guess the secret number between 1 and 1000:"
 while [[ $GUESS_NUMBER -ne $SECRET_NUMBER ]]
 do
   read GUESS_NUMBER
   (( TRIES++))
-
-  if (( $GUESS_NUMBER < $SECRET_NUMBER ))
+  #verify number is valid integer
+  if [[ $GUESS_NUMBER =~ ^[0-9]+$ ]]
   then
-    echo "It's higher than that, guess again:"
+    if (( $GUESS_NUMBER < $SECRET_NUMBER ))
+    then
+      echo "It's higher than that, guess again:"
 
-  elif (( $GUESS_NUMBER > $SECRET_NUMBER ))
-  then
-    echo "It's lower than that, guess again:"
+    elif (( $GUESS_NUMBER > $SECRET_NUMBER ))
+    then
+      echo "It's lower than that, guess again:"
 
+    else
+      echo "You guessed it in $TRIES tries. The secret number was $SECRET_NUMBER. Nice job!"
+      $PSQL "INSERT INTO games(user_id,attempts,guess_number) VALUES($USER_ID,$TRIES,$SECRET_NUMBER);" >/dev/null
+    fi  
   else
-    echo "You guessed it in $TRIES tries. The secret number was $SECRET_NUMBER. Nice job!"   
-  fi  
+    echo "That is not an integer, guess again:"
+    continue
+  fi
 done
-echo "That is not an integer, guess again:"
+

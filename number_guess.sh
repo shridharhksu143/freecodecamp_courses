@@ -7,6 +7,7 @@ PSQL="psql --username=freecodecamp --dbname=number_guess -t --no-align -c"
 
 #prompt user for requesting user name and read it
 echo "Enter your username:"
+read USER_NAME
 #create a variable to check availabality of username in users table
 USER_NAME_CHECK=$($PSQL "SELECT name FROM users WHERE name = '$USER_NAME';")
 
@@ -22,7 +23,7 @@ do
 done
 
 # create a if loop to check user availabality 
-if  ! [[ '$USER_NAME' == '$USER_NAME_CHECK' ]]
+if [[ $USER_NAME != $USER_NAME_CHECK ]]
 then
   #if not availabe show available show welcome message
   echo "Welcome, $USER_NAME! It looks this is your first time here."

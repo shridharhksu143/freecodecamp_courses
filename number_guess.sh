@@ -22,7 +22,7 @@ do
 done
 
 # create a if loop to check user availabality 
-if  [[ $USER_NAME == $USER_NAME_CHECK ]]
+if  ! [[ '$USER_NAME' == '$USER_NAME_CHECK' ]]
 then
   #if not availabe show available show welcome message
   echo "Welcome, $USER_NAME! It looks this is your first time here."
@@ -33,20 +33,22 @@ then
 else
   #get user details from table
   #user_id
-  USER_ID=$($PSQL "SELECT user_id FROM users WHERE name = '$USER_NAME';")
+  USER_IDS=$($PSQL "SELECT user_id FROM users WHERE name = '$USER_NAME';")
   #total number of games played
-  GAMES_PLAYED=$($PSQL "SELECT COUNT(*) FROM games WHERE user_id = $USER_ID;")
+  GAMES_PLAYED=$($PSQL "SELECT COUNT(*) FROM games WHERE user_id = $USER_IDS;")
   # best attempt
-  BEST_ATTEMPT=$($PSQL "SELECT MIN(attempts) FROM games WHERE user_id = $USER_ID ;")
+  BEST_ATTEMPT=$($PSQL "SELECT MIN(attempts) FROM games WHERE user_id = $USER_IDS;")
   #show welcome message
   echo "Welcome back, you have played $GAMES_PLAYED games, and your best game took $BEST_ATTEMPT guesses."
 fi
 
 GUESS_NUMBER=0
 TRIES=0
-
+USER_ID=$($PSQL "SELECT user_id FROM users WHERE name = '$USER_NAME' LIMIT 1;" | xargs)
 #prompt for number guessing
 echo "Guess the secret number between 1 and 1000:"
+
+#adding while loop
 while [[ $GUESS_NUMBER -ne $SECRET_NUMBER ]]
 do
   read GUESS_NUMBER
@@ -64,7 +66,7 @@ do
 
     else
       echo "You guessed it in $TRIES tries. The secret number was $SECRET_NUMBER. Nice job!"
-      $PSQL "INSERT INTO games(user_id,attempts,guess_number) VALUES($USER_ID,$TRIES,$SECRET_NUMBER);" >/dev/null
+      $PSQL "INSERT INTO games(user_id, attempts, guess_number) VALUES($USER_ID, $TRIES, $SECRET_NUMBER);" >/dev/null
     fi  
   else
     echo "That is not an integer, guess again:"

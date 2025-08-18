@@ -7,7 +7,6 @@ PSQL="psql --username=freecodecamp --dbname=number_guess -t --no-align -c"
 
 #prompt user for requesting user name and read it
 echo "Enter your username:"
-
 #create a variable to check availabality of username in users table
 USER_NAME_CHECK=$($PSQL "SELECT name FROM users WHERE name = '$USER_NAME';")
 
@@ -43,4 +42,25 @@ else
   echo "Welcome back, you have played $GAMES_PLAYED games, and your best game took $BEST_ATTEMPT guesses."
 fi
 
+GUESS_NUMBER=0
+TRIES=0
+#prompt for number guessing
+echo "Guess the secret number between 1 and 1000:"
+while [[ $GUESS_NUMBER -ne $SECRET_NUMBER ]]
+do
+  read GUESS_NUMBER
+  (( TRIES++))
 
+  if (( $GUESS_NUMBER < $SECRET_NUMBER ))
+  then
+    echo "It's higher than that, guess again:"
+
+  elif (( $GUESS_NUMBER > $SECRET_NUMBER ))
+  then
+    echo "It's lower than that, guess again:"
+
+  else
+    echo "You guessed it in $TRIES tries. The secret number was $SECRET_NUMBER. Nice job!"   
+  fi  
+done
+echo "That is not an integer, guess again:"

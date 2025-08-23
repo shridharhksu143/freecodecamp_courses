@@ -1,14 +1,33 @@
-node {
-    stage('Checkout') {
-        // Pull code from master branch of your GitHub repo
-        git branch: 'master', url: 'https://github.com/your-username/your-repo.git'
-    }
+pipeline {
+    agent none   // No global agent, we'll specify per stage
 
-    stage('Run Script') {
-        // Run your shell script with inputs
-        sh '''
-            chmod +x questionnaries.sh
-            echo -e "Shridhar\nfreecodecamp" | ./questionnaries.sh
-        '''
+    stages {
+        stage('Run on Linux') {
+            agent { label 'linux' }   // Ensure your Jenkins node has label 'linux'
+            steps {
+                script {
+                    // Run your script with multiple inputs
+                    sh '''
+                        echo "Shridhar" | ./questionnaries.sh
+                        echo -e "Shridhar\nBengaluru\nFreecodecamp" | ./questionnaries.sh
+                        echo -e "TestUser\nMumbai\nGithub" | ./questionnaries.sh
+                    '''
+                }
+            }
+        }
+
+        stage('Run on Windows') {
+            agent { label 'windows' }   // Ensure your Jenkins node has label 'windows'
+            steps {
+                script {
+                    // For Windows use bat instead of sh
+                    bat '''
+                        echo Shridhar | questionnaries.sh
+                        echo Shridhar && echo Bengaluru && echo Freecodecamp | questionnaries.sh
+                        echo TestUser && echo Delhi && echo Jenkins | questionnaries.sh
+                    '''
+                }
+            }
+        }
     }
 }
